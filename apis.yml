@@ -1,7 +1,27 @@
 aid: stylesaint
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stylesaint.png
 name: StyleSaint
-description: StyleSaint is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  StyleSaint is a Los Angeles-based direct-to-consumer luxury women's fashion
+  brand, originally an a16z-backed social-commerce startup and now an
+  independent e-commerce label selling silk, lace, and other luxury-fabric
+  apparel that is handmade in LA, ethically made, and sustainably sourced. The
+  storefront runs on Shopify. As of this enrichment pass StyleSaint publishes no
+  public developer program, API documentation, OpenAPI/AsyncAPI specification,
+  SDKs, or agent-facing surface of its own; it is catalogued here as an a16z
+  portfolio company. Any programmable commerce capability would be provided by
+  the underlying Shopify platform rather than by a first-party StyleSaint API.
 url: https://raw.githubusercontent.com/api-evangelist/stylesaint/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fashion
+- Ecommerce
+- Retail
+- Apparel
+- Direct to Consumer
+- Shopify
 apis: []
+common:
+- type: DomainSecurity
+  url: security/stylesaint-domain-security.yml
+- type: Website
+  url: https://stylesaint.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
